@@ -1,0 +1,57 @@
+{
+  "welcome": "Hello",
+  "slogan": "Privacy in every transaction.",
+  "button": {
+    "createWallet": "Create New Wallet",
+    "restoreWallet": "Restore Wallet"
+  },
+
+  "onboarding": {
+    "slides": {
+      "s1": {
+        "title": "Privacy by default",
+        "text": "Alfred Wallet reduces network traceability using Tor with isolated connections and session-based circuit rotation."
+      },
+      "s2": {
+        "title": "On-chain privacy",
+        "text": "Built on Taproot and the Lightning Network, the wallet improves efficiency and reduces blockchain exposure."
+      },
+      "s3": {
+        "title": "Network anonymization",
+        "text": "Each interaction uses isolated network paths to reduce correlation between user activity and sessions."
+      },
+      "s4": {
+        "title": "Flexible custody",
+        "text": "Choose between full self-custody, Lightning privacy mode, or federated custody with Fedimint."
+      }
+    }
+  },
+
+  "restore": {
+    "title": "Restore Wallet",
+    "subtitle": "On-chain secured Bitcoin wallet (Taproot)",
+
+    "type": {
+      "12": "12 words",
+      "24": "24 words"
+    },
+
+    "button": {
+      "restore": "Restore Wallet",
+      "dashboard": "Go to Dashboard"
+    },
+
+    "security": "Your seed never leaves this device",
+
+    "loading": {
+      "text": "Restoring on-chain wallet...",
+      "subtext": "Detecting Taproot (BIP86) structure"
+    },
+
+    "success": {
+      "title": "✔ Wallet Restored",
+      "subtitle": "Taproot wallet detected\nLightning layer initializing..."
+    }
+  }
+
+}

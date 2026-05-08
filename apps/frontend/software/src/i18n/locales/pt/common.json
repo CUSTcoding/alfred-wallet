@@ -1,0 +1,56 @@
+{
+  "slogan": "Privacidade em cada transação.",
+  "button": {
+    "createWallet": "Criar Nova Carteira",
+    "restoreWallet": "Restaurar Carteira"
+  },
+  
+  "onboarding": {
+    "slides": {
+      "s1": {
+        "title": "Privacidade por padrão",
+        "text": "A Alfred Wallet reduz a rastreabilidade de rede utilizando Tor com isolamento de conexões e rotação de circuitos por sessão."
+      },
+      "s2": {
+        "title": "Privacidade on-chain",
+        "text": "Baseada em Taproot e Lightning Network, a wallet melhora a eficiência e reduz a exposição das transações na blockchain."
+      },
+      "s3": {
+        "title": "Anonimização de rede",
+        "text": "Cada interação utiliza caminhos de rede isolados para dificultar a correlação entre atividades e sessões do utilizador."
+      },
+      "s4": {
+        "title": "Custódia flexível",
+        "text": "Escolha entre autocustódia total, modo Lightning com maior privacidade ou custódia federada com Fedimint."
+      }
+    }
+  },
+
+  "restore": {
+    "title": "Restaurar Carteira",
+    "subtitle": "Carteira Bitcoin segura on-chain (Taproot)",
+
+    "type": {
+      "12": "12 palavras",
+      "24": "24 palavras"
+    },
+
+    "button": {
+      "restore": "Restaurar Carteira",
+      "dashboard": "Ir para o Dashboard"
+    },
+
+    "security": "A tua seed nunca sai deste dispositivo",
+
+    "loading": {
+      "text": "A restaurar carteira on-chain...",
+      "subtext": "A detetar estrutura Taproot (BIP86)"
+    },
+
+    "success": {
+      "title": "✔ Carteira Restaurada",
+      "subtitle": "Carteira Taproot detetada\nLightning a inicializar..."
+    }
+  }
+
+}
