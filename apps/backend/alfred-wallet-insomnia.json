@@ -1,0 +1,150 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-05-08T12:00:00.000Z",
+  "__export_source": "alfred-wallet-backend",
+  "resources": [
+    {
+      "_id": "wrk_alfred_wallet",
+      "_type": "workspace",
+      "name": "Alfred Wallet Backend API",
+      "description": "Test all endpoints for Alfred Wallet MVP"
+    },
+    {
+      "_id": "env_local",
+      "_type": "environment",
+      "name": "Local",
+      "data": {
+        "base_url": "http://127.0.0.1:8080"
+      }
+    },
+    {
+      "_id": "req_health",
+      "_type": "request",
+      "parentId": "wrk_alfred_wallet",
+      "name": "Health Check",
+      "method": "GET",
+      "url": "{{ base_url }}/health",
+      "body": {},
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1
+    },
+    {
+      "_id": "req_tor_status",
+      "_type": "request",
+      "parentId": "wrk_alfred_wallet",
+      "name": "Tor Status",
+      "method": "GET",
+      "url": "{{ base_url }}/tor-status",
+      "body": {},
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -2
+    },
+    {
+      "_id": "req_create_wallet_12",
+      "_type": "request",
+      "parentId": "wrk_alfred_wallet",
+      "name": "Create Wallet (12 words)",
+      "method": "POST",
+      "url": "{{ base_url }}/create-wallet",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\"word_count\": 12}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -3
+    },
+    {
+      "_id": "req_create_wallet_24",
+      "_type": "request",
+      "parentId": "wrk_alfred_wallet",
+      "name": "Create Wallet (24 words)",
+      "method": "POST",
+      "url": "{{ base_url }}/create-wallet",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\"word_count\": 24}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -4
+    },
+    {
+      "_id": "req_restore_wallet",
+      "_type": "request",
+      "parentId": "wrk_alfred_wallet",
+      "name": "Restore Wallet",
+      "method": "POST",
+      "url": "{{ base_url }}/restore-wallet",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\"mnemonic\": \"abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about\"}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -5
+    },
+    {
+      "_id": "req_new_address",
+      "_type": "request",
+      "parentId": "wrk_alfred_wallet",
+      "name": "New Address (Taproot)",
+      "method": "GET",
+      "url": "{{ base_url }}/new-address",
+      "body": {},
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -6
+    },
+    {
+      "_id": "req_balance",
+      "_type": "request",
+      "parentId": "wrk_alfred_wallet",
+      "name": "Get Balance",
+      "method": "GET",
+      "url": "{{ base_url }}/balance",
+      "body": {},
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -7
+    },
+    {
+      "_id": "req_send_transaction",
+      "_type": "request",
+      "parentId": "wrk_alfred_wallet",
+      "name": "Send Transaction (with Tor Circuit)",
+      "method": "POST",
+      "url": "{{ base_url }}/send",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\"hex\": \"0200000001...\"}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -8
+    }
+  ]
+}
